@@ -1,6 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import GLTFLoader from 'three-gltf-loader';
-import '../app/assets/protoCanvas.glb';
 
 declare const THREE: any;
 
@@ -104,8 +103,9 @@ export class MeshComponent {
 
 
   const gltfLoader = new GLTFLoader();
-    const url = './assets/protoCanvas.glb';
+    const url = 'https://stackblitz.com/files/threejs-meshcube-kkpbgx/github/RayOlivier/threejs-spike/master/app/assets/protoCanvas.glb';
     gltfLoader.load(url, (gltf) => {
+      console.log(gltf)
       const root = gltf.scene;
       this.scene.add(root);
     });

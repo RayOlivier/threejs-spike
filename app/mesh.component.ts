@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import GLTFLoader from 'three-gltf-loader';
-import './assets/protoCanvas.glb';
+import '../app/assets/protoCanvas.glb';
 
 declare const THREE: any;
 
